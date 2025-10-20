@@ -1,5 +1,8 @@
 # sql-customer-orders-analysis
 SQL query to calculate total customers, total orders, and total spend per signup year.
+
+Query Solution
+
 SELECT 
     YEAR(c.signup_date) AS signup_year,
     COUNT(DISTINCT c.customer_id) AS total_customers,
